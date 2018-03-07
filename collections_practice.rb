@@ -4,7 +4,8 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  array.sort.reverse
+  array.sort.reverse |left, right|
+  right <=> left
 end
 
 def sort_array_char_count(array)
@@ -14,7 +15,7 @@ def swap_elements(array)
 end
 
 def reverse_array(array)
-  array.sort.reverse[0]
+  array.sort.reverse
 end
 
 def kesha_maker(array)
